@@ -117,7 +117,7 @@ Window {
 	onTotalSecondsPassedChanged: {
 		var minutes = Math.floor(totalSecondsPassed / 60)
 		var seconds = totalSecondsPassed - minutes * 60
-		restartButton.text = "Passed: " + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds + " seconds"
+		restartButton.text = (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds
 	}
 
 	function showResults(show) {
